@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Instagram Feed</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+				<div class="container">
+					<a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+					<div class="d-flex flex-row bd-highlight">
+						<div class="bd-highlight">
+							<button
+								type="button"
+								class="btn btn-success shadow-none"
+								data-toggle="modal"
+								data-target="#exampleModal"
+							>
+								Create a new post
+							</button>
+						</div>
+						<div
+							class="modal fade"
+							id="exampleModal"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Simple new post</h5>
+										<button
+											type="button"
+											class="close"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<textarea
+													class="form-control"
+													id="exampleFormControlTextarea1"
+													rows="3"
+												></textarea>
+												<i class="fas fa-camera-retro"></i>
+												<i class="fas fa-map-marker-alt"></i>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">
+											Close
+										</button>
+										<button type="button" class="btn btn-primary">Publish</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button
+								class="btn dropdown-toggle shadow-none"
+								type="button"
+								id="dropdownMenuButton"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<i class="fas fa-cog text-muted"></i>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid bg-light">
+			<div class="container border-bottom">
+				<div class="d-flex flex-row">
+					<div class="p-2">
+						<img
+							src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+							class="rounded-circle"
+							alt="Cinque Terre"
+							width="160"
+							height="160"
+						/>
+					</div>
+					<div class="p-2 col-8">
+						<div class="d-flex pl-4 flex-row">
+							<div class="p-2 align-self-center">oscarfzz_</div>
+							<div class="p-2">
+								<button type="button" class="btn btn-secondary">Edit this profile</button>
+							</div>
+							<div class="p-2 align-self-center"><i class="fas fa-bullseye"></i></div>
+						</div>
+						<div class="d-flex pl-4 flex-row">
+							<div class="p-2 align-self-center">9 posts</div>
+							<div class="p-2">
+								<div class="p-2 align-self-center">955 followers</div>
+							</div>
+							<div class="p-2 align-self-center">357 following</div>
+						</div>
+						<div class="d-flex pl-4 flex-row">
+							<div class="p-2 align-self-center">🚀 Full Stack Junior in Process</div>
+						</div>
+						<div class="d-flex pl-4 flex-row">
+							<div class="p-2 align-self-center">☝ SEO and owner several projects</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-white">
+			<div class="container">
+				<main class="d-flex justify-content-center m-2">
+					<ul class="nav nav-pills">
+						<li class="nav-item active">
+							<a
+								class="nav-link active text-dark"
+								id="tab-1"
+								data-toggle="tab"
+								role="tab"
+								href="#content-1"
+								aria-selected="true"
+								aria-controls="content-1"
+								><i class="fas fa-th-large"></i
+							></a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-dark"
+								id="tab-2"
+								data-toggle="tab"
+								role="tab"
+								href="#content-2"
+								aria-selected="false"
+								aria-controls="content-2"
+								><i class="fas fa-square"></i
+							></a>
+						</li>
+					</ul>
+				</main>
+			</div>
+		</div>
+		<main role="main" class="container-full">
+			<div class="container-full">
+				<div class="tab-content">
+					<div
+						class="tab-pane fade show active"
+						id="content-1"
+						aria-labelledby="tab-1"
+						role="tabpanel"
+					>
+						<div class="container">
+							<div class="d-flex flex-row">
+								<div class="p-2 col-4 rounded">
+									<img
+										class="card-img-top"
+										src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+										alt="Card image cap"
+										with="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1566837945700-30057527ade0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+							</div>
+							<div class="d-flex flex-row">
+								<div class="p-2 col-4 rounded">
+									<img
+										class="card-img-top"
+										src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1576488216780-2309754d4dc2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1601225691237-b0a1dfa036e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+							</div>
+							<div class="d-flex flex-row">
+								<div class="p-2 col-4 rounded">
+									<img
+										class="card-img-top"
+										src="https://images.unsplash.com/photo-1601317176486-9085aa4b96d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1584209589416-f951a91ec490?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+								<div class="p-2 col-4">
+									<img
+										class="card-img-top rounded"
+										src="https://images.unsplash.com/photo-1585919331750-793917a8df98?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+										alt="Card image cap"
+										width="100%"
+										height="250px"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="content-2"
+						aria-labelledby="tab-2"
+						role="tabpanel"
+					>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 1 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 2 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1566837945700-30057527ade0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 3 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 4 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1576488216780-2309754d4dc2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 5 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1601225691237-b0a1dfa036e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 6 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1601317176486-9085aa4b96d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 7 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1584209589416-f951a91ec490?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 8 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<div
+									class="p-2 bd-highlight col-lg-6 offset-lg-3 d-flex justify-content-center"
+								>
+									<div class="card">
+										<div class="card-title">
+											<div class="d-flex flex-row">
+												<div class="p-2 col-6">
+													<div class="d-flex flex-row">
+														<div class="p-2 col-3">
+															<img
+																src="https://instagram.fmad10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/139062634_3697684906958131_6185752528956603932_n.jpg?_nc_ht=instagram.fmad10-1.fna.fbcdn.net&_nc_ohc=8wJwyNkEks4AX9f5lKT&tp=1&oh=dfe1a3cf40c9b3d99e242f51fadccd4f&oe=602D36BE"
+																class="rounded-circle"
+																alt="Cinque Terre"
+																width="35"
+																height="35"
+															/>
+														</div>
+														<div
+															class="d-flex font-weight-normal justify-content-start align-self-center"
+														>
+															oscarfdz_
+														</div>
+													</div>
+												</div>
+												<div
+													class="p-2 ml-4 col-5 d-flex justify-content-end align-self-center"
+												>
+													<a href="#"
+														><i
+															class="fa fa-ellipsis-v fa-lg text-dark"
+															aria-hidden="true"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+										<img
+											class="card-img-top"
+											src="https://images.unsplash.com/photo-1585919331750-793917a8df98?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+											alt="Card image cap"
+											width="100%"
+											height="280px"
+										/>
+										<div class="card-body">
+											<div class="row">
+												<div class="d-flex flex-row col-6">
+													<div class="p-1"><i class="far fa-heart fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-comment fa-lg"></i></div>
+													<div class="p-1"><i class="far fa-paper-plane fa-lg"></i></div>
+												</div>
+												<div class="d-flex flex-row justify-content-end col-6">
+													<div><i class="far fa-bookmark fa-lg"></i></div>
+												</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1 font-weight-light">3,230 Likes</div>
+											</div>
+											<div class="d-flex flex-row">
+												<div class="p-1">oscarfdz_ 9 Day</div>
+											</div>
+										</div>
+										<div class="card-footer bg-white">
+											<div class="row">
+												<div class="col-md-12">
+													<form action="" accept-charset="UTF-8" method="get">
+														<div class="input-group">
+															<input
+																type="text"
+																name="search"
+																id="search"
+																value="Comment"
+																placeholder="Search accounts, contracts and transactions"
+																class="form-control border-0 shadow-none"
+															/>
+															<span class="input-group-btn">
+																<input
+																	type="button"
+																	name="commit"
+																	value="Publish"
+																	class="btn text-primary shadow-none"
+																	data-disable-with="Search"
+																/>
+															</span>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+			integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
